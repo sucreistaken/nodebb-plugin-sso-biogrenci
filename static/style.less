@@ -1,0 +1,1114 @@
+/* ================================================
+   bi'öğrenci Premium Fırsatlar
+   ================================================ */
+
+/* ---------- Light Theme Variables ---------- */
+#biogrenci-firsatlar {
+  --bio-primary: #2563eb;
+  --bio-primary-dark: #1d4ed8;
+  --bio-primary-light: #eff6ff;
+  --bio-accent: #f43f5e;
+  --bio-bg: #f8fafc;
+  --bio-card-bg: rgba(255, 255, 255, 0.85);
+  --bio-card-body-bg: #fff;
+  --bio-text-main: #0f172a;
+  --bio-text-mut: #64748b;
+  --bio-border: rgba(226, 232, 240, 0.8);
+  --bio-border-glass: rgba(255, 255, 255, 0.5);
+  --bio-controls-bg: rgba(255, 255, 255, 0.75);
+  --bio-input-bg: rgba(255, 255, 255, 0.9);
+  --bio-input-focus-bg: #fff;
+  --bio-chip-bg: #fff;
+  --bio-chip-hover-bg: #f8fafc;
+  --bio-chip-active-bg: #0f172a;
+  --bio-chip-active-color: #fff;
+  --bio-select-bg: #fff;
+  --bio-skeleton-bg: #e2e8f0;
+  --bio-shimmer-color: rgba(255, 255, 255, 0.4);
+  --bio-empty-bg: rgba(255, 255, 255, 0.5);
+  --bio-pager-bg: #fff;
+  --bio-tag-bg: rgba(255, 255, 255, 0.9);
+  --bio-star-bg: rgba(255, 255, 255, 0.9);
+  --bio-placeholder-bg: #f1f5f9;
+  --bio-shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --bio-shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --bio-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --bio-shadow-glow: 0 0 20px rgba(37, 99, 235, 0.15);
+  --bio-card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1);
+  --bio-card-hover-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1);
+  --bio-hero-gradient: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  --bio-badge-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  --bio-radius: 20px;
+  --bio-radius-sm: 12px;
+}
+
+/* ---------- Dark Theme Variables ---------- */
+[data-theme="dark"] #biogrenci-firsatlar {
+  --bio-primary: #3b82f6;
+  --bio-primary-dark: #60a5fa;
+  --bio-primary-light: #1e3a5f;
+  --bio-bg: #0f172a;
+  --bio-card-bg: rgba(30, 41, 59, 0.85);
+  --bio-card-body-bg: #1e293b;
+  --bio-text-main: #e2e8f0;
+  --bio-text-mut: #94a3b8;
+  --bio-border: rgba(51, 65, 85, 0.8);
+  --bio-border-glass: rgba(51, 65, 85, 0.5);
+  --bio-controls-bg: rgba(15, 23, 42, 0.85);
+  --bio-input-bg: rgba(30, 41, 59, 0.9);
+  --bio-input-focus-bg: #1e293b;
+  --bio-chip-bg: #1e293b;
+  --bio-chip-hover-bg: #334155;
+  --bio-chip-active-bg: #e2e8f0;
+  --bio-chip-active-color: #0f172a;
+  --bio-select-bg: #1e293b;
+  --bio-skeleton-bg: #334155;
+  --bio-shimmer-color: rgba(255, 255, 255, 0.06);
+  --bio-empty-bg: rgba(30, 41, 59, 0.5);
+  --bio-pager-bg: #1e293b;
+  --bio-tag-bg: rgba(30, 41, 59, 0.9);
+  --bio-star-bg: rgba(30, 41, 59, 0.9);
+  --bio-placeholder-bg: #334155;
+  --bio-shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --bio-shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+  --bio-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  --bio-shadow-glow: 0 0 20px rgba(59, 130, 246, 0.25);
+  --bio-card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+  --bio-card-hover-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.4);
+  --bio-hero-gradient: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
+  --bio-badge-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.7));
+}
+
+/* ---------- Page Container ---------- */
+#biogrenci-firsatlar {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--bio-text-main);
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#biogrenci-firsatlar * {
+  box-sizing: border-box;
+}
+
+/* Prevent page-level horizontal scroll from plugin */
+.bio-premium {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* ---------- Aurora Animated Background ---------- */
+#biogrenci-firsatlar .bio-aurora {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+#biogrenci-firsatlar .bio-aurora-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: bio-aurora-float 20s infinite alternate ease-in-out;
+}
+
+#biogrenci-firsatlar .bio-orb-1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(59, 130, 246, 0.3);
+  top: -80px;
+  left: -60px;
+}
+
+#biogrenci-firsatlar .bio-orb-2 {
+  width: 350px;
+  height: 350px;
+  background: rgba(236, 72, 153, 0.2);
+  top: 80px;
+  right: -80px;
+  animation-delay: -5s;
+}
+
+#biogrenci-firsatlar .bio-orb-3 {
+  width: 250px;
+  height: 250px;
+  background: rgba(139, 92, 246, 0.25);
+  bottom: -50px;
+  left: 30%;
+  animation-delay: -10s;
+}
+
+[data-theme="dark"] #biogrenci-firsatlar .bio-aurora {
+  opacity: 0.25;
+}
+
+@keyframes bio-aurora-float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(50px, 30px) scale(1.1);
+  }
+
+  100% {
+    transform: translate(-30px, -50px) scale(0.9);
+  }
+}
+
+/* ---------- Hero Section ---------- */
+#biogrenci-firsatlar .bio-hero {
+  padding: 80px 20px 60px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+#biogrenci-firsatlar .bio-badge-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bio-badge-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--bio-primary-dark);
+  margin-bottom: 24px;
+  border: 1px solid var(--bio-border-glass);
+  box-shadow: var(--bio-shadow-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#biogrenci-firsatlar .bio-badge-premium i {
+  color: #f59e0b;
+}
+
+#biogrenci-firsatlar .bio-hero h1 {
+  margin: 0 0 16px;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  background: var(--bio-hero-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#biogrenci-firsatlar .bio-hero p {
+  margin: 0 auto;
+  font-size: 18px;
+  color: var(--bio-text-mut);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* ---------- Sticky Glass Controls ---------- */
+#biogrenci-firsatlar .bio-controls-wrapper {
+  position: sticky;
+  top: 70px;
+  z-index: 40;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+
+#biogrenci-firsatlar .bio-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bio-controls-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--bio-border-glass);
+  padding: 12px 16px;
+  border-radius: var(--bio-radius);
+  box-shadow: var(--bio-shadow-md);
+  flex-wrap: wrap;
+}
+
+/* Search */
+#biogrenci-firsatlar .bio-search {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+#biogrenci-firsatlar .bio-search>i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bio-text-mut);
+  font-size: 16px;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+#biogrenci-firsatlar .bio-search input {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px 0 48px;
+  border: 2px solid transparent;
+  background: var(--bio-input-bg);
+  border-radius: var(--bio-radius-sm);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--bio-text-main);
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+  box-sizing: border-box;
+}
+
+#biogrenci-firsatlar .bio-search input::placeholder {
+  color: var(--bio-text-mut);
+}
+
+#biogrenci-firsatlar .bio-search input:focus {
+  background: var(--bio-input-focus-bg);
+  border-color: var(--bio-primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+#biogrenci-firsatlar .bio-search input:focus~i {
+  color: var(--bio-primary);
+}
+
+/* Filters */
+#biogrenci-firsatlar .bio-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 4px 0;
+}
+
+#biogrenci-firsatlar .bio-filters::-webkit-scrollbar {
+  display: none;
+}
+
+#biogrenci-firsatlar .bio-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid var(--bio-border);
+  background: var(--bio-chip-bg);
+  color: var(--bio-text-mut);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-shadow: var(--bio-shadow-sm);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#biogrenci-firsatlar .bio-chip i {
+  font-size: 13px;
+}
+
+#biogrenci-firsatlar .bio-chip:hover {
+  background: var(--bio-chip-hover-bg);
+  color: var(--bio-text-main);
+}
+
+#biogrenci-firsatlar .bio-chip.active {
+  background: var(--bio-chip-active-bg);
+  color: var(--bio-chip-active-color);
+  border-color: var(--bio-chip-active-bg);
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.15);
+}
+
+/* Sort */
+#biogrenci-firsatlar .bio-sort {
+  position: relative;
+  min-width: 160px;
+}
+
+#biogrenci-firsatlar .bio-sort-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bio-text-mut);
+  pointer-events: none;
+  z-index: 2;
+}
+
+#biogrenci-firsatlar .bio-sort select {
+  width: 100%;
+  height: 48px;
+  padding: 0 40px 0 44px;
+  border: 1px solid var(--bio-border);
+  border-radius: var(--bio-radius-sm);
+  background: var(--bio-select-bg);
+  color: var(--bio-text-main);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--bio-shadow-sm);
+  box-sizing: border-box;
+}
+
+#biogrenci-firsatlar .bio-sort::after {
+  content: '\f107';
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bio-text-mut);
+  pointer-events: none;
+}
+
+#biogrenci-firsatlar .bio-sort select:focus {
+  border-color: var(--bio-primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* ---------- Grid ---------- */
+#biogrenci-firsatlar .bio-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  column-count: unset !important;
+}
+
+/* ---------- Premium Card ---------- */
+#biogrenci-firsatlar a.bio-card {
+  background: var(--bio-card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--bio-radius);
+  overflow: hidden;
+  border: 1px solid var(--bio-border-glass);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s ease;
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer;
+  box-shadow: var(--bio-card-shadow);
+  position: relative;
+  animation: bio-card-entrance 0.5s backwards;
+  break-inside: avoid;
+  margin-bottom: 0;
+}
+
+#biogrenci-firsatlar a.bio-card:nth-child(3n+2) {
+  animation-delay: 0.06s;
+}
+
+#biogrenci-firsatlar a.bio-card:nth-child(3n+3) {
+  animation-delay: 0.12s;
+}
+
+@keyframes bio-card-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#biogrenci-firsatlar a.bio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--bio-card-hover-shadow);
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+#biogrenci-firsatlar a.bio-card.featured {
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  box-shadow: 0 20px 40px rgba(245, 158, 11, 0.08);
+}
+
+/* Card Image Area */
+#biogrenci-firsatlar .bio-card-img {
+  position: relative;
+  overflow: hidden;
+  background: var(--bio-placeholder-bg);
+  aspect-ratio: 16 / 10;
+}
+
+#biogrenci-firsatlar .bio-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#biogrenci-firsatlar a.bio-card:hover .bio-card-img img {
+  transform: scale(1.05);
+}
+
+#biogrenci-firsatlar .bio-card-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.55) 100%);
+  pointer-events: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+#biogrenci-firsatlar a.bio-card:hover .bio-card-img::after {
+  opacity: 1;
+}
+
+/* Card Image Placeholder */
+#biogrenci-firsatlar .bio-card-ph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bio-placeholder-bg), var(--bio-border));
+}
+
+#biogrenci-firsatlar .bio-card-ph i {
+  font-size: 42px;
+  color: var(--bio-text-mut);
+  opacity: 0.25;
+}
+
+/* Card Badges */
+#biogrenci-firsatlar .bio-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bio-tag-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--bio-border-glass);
+}
+
+#biogrenci-firsatlar .bio-tag-kupon {
+  color: #10b981;
+}
+
+#biogrenci-firsatlar .bio-tag-qr {
+  color: var(--bio-primary);
+}
+
+#biogrenci-firsatlar .bio-tag-affiliate {
+  color: #f43f5e;
+}
+
+/* Star */
+#biogrenci-firsatlar .bio-star {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: var(--bio-star-bg);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  border: 1px solid var(--bio-border-glass);
+}
+
+#biogrenci-firsatlar .bio-star i {
+  color: #f59e0b;
+  font-size: 14px;
+}
+
+/* Timer */
+#biogrenci-firsatlar .bio-timer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 16px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#biogrenci-firsatlar .bio-timer i {
+  color: #facc15;
+}
+
+/* Card Body */
+#biogrenci-firsatlar .bio-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: var(--bio-card-body-bg);
+}
+
+#biogrenci-firsatlar .bio-brand {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--bio-primary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+#biogrenci-firsatlar .bio-card-body h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--bio-text-main);
+  margin: 0 0 8px;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#biogrenci-firsatlar .bio-card-body p {
+  font-size: 13px;
+  color: var(--bio-text-mut);
+  margin: 0 0 16px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* CTA Button */
+#biogrenci-firsatlar .bio-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: var(--bio-radius-sm);
+  background: var(--bio-chip-active-bg);
+  color: var(--bio-chip-active-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: auto;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+#biogrenci-firsatlar a.bio-card:hover .bio-cta {
+  background: var(--bio-primary);
+  color: #fff;
+  box-shadow: var(--bio-shadow-glow);
+}
+
+#biogrenci-firsatlar .bio-cta i {
+  transition: transform 0.3s ease;
+  font-size: 12px;
+}
+
+#biogrenci-firsatlar a.bio-card:hover .bio-cta i {
+  transform: translateX(4px);
+}
+
+/* ---------- Skeleton Loading ---------- */
+#biogrenci-firsatlar .bio-skeleton-card {
+  background: var(--bio-card-body-bg);
+  border-radius: var(--bio-radius);
+  border: 1px solid var(--bio-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#biogrenci-firsatlar .bio-shimmer {
+  background: var(--bio-skeleton-bg);
+  background-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0,
+      var(--bio-shimmer-color) 20%,
+      var(--bio-shimmer-color) 60%,
+      rgba(255, 255, 255, 0));
+  background-size: 200% 100%;
+  animation: bio-shimmer 1.5s infinite linear;
+}
+
+#biogrenci-firsatlar .bio-skel-img {
+  height: 180px;
+  width: 100%;
+}
+
+#biogrenci-firsatlar .bio-skel-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#biogrenci-firsatlar .bio-skel-brand {
+  height: 14px;
+  width: 40%;
+  border-radius: 4px;
+}
+
+#biogrenci-firsatlar .bio-skel-title {
+  height: 20px;
+  width: 90%;
+  border-radius: 4px;
+}
+
+#biogrenci-firsatlar .bio-skel-desc {
+  height: 14px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+#biogrenci-firsatlar .bio-skel-btn {
+  height: 44px;
+  width: 100%;
+  border-radius: var(--bio-radius-sm);
+  margin-top: 8px;
+}
+
+@keyframes bio-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ---------- Empty State ---------- */
+#biogrenci-firsatlar .bio-state.bio-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--bio-empty-bg);
+  backdrop-filter: blur(10px);
+  border-radius: var(--bio-radius);
+  border: 1px dashed var(--bio-border);
+}
+
+#biogrenci-firsatlar .bio-state.bio-empty i {
+  font-size: 56px;
+  color: var(--bio-text-mut);
+  opacity: 0.4;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#biogrenci-firsatlar .bio-state.bio-empty h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--bio-text-main);
+  margin: 0 0 8px;
+}
+
+#biogrenci-firsatlar .bio-state.bio-empty p {
+  color: var(--bio-text-mut);
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ---------- Pagination ---------- */
+#biogrenci-firsatlar .bio-pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+#biogrenci-firsatlar .bio-pager-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--bio-border);
+  background: var(--bio-pager-bg);
+  color: var(--bio-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 15px;
+  box-shadow: var(--bio-shadow-sm);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#biogrenci-firsatlar .bio-pager-btn:hover:not(:disabled) {
+  background: var(--bio-primary);
+  color: #fff;
+  border-color: var(--bio-primary);
+  transform: scale(1.1);
+  box-shadow: var(--bio-shadow-glow);
+}
+
+#biogrenci-firsatlar .bio-pager-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#biogrenci-firsatlar .bio-page-bubble {
+  background: var(--bio-pager-bg);
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--bio-text-main);
+  box-shadow: var(--bio-shadow-sm);
+  border: 1px solid var(--bio-border);
+}
+
+/* ==============================================
+   RESPONSIVE
+   ============================================== */
+
+/* ---------- Tablet (1024px) ---------- */
+@media (max-width: 1024px) {
+  #biogrenci-firsatlar .bio-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+  }
+
+  #biogrenci-firsatlar .bio-hero h1 {
+    font-size: 40px;
+  }
+}
+
+/* ---------- Mobile (768px) ---------- */
+@media (max-width: 768px) {
+  #biogrenci-firsatlar {
+    padding: 0 15px 50px;
+  }
+
+  #biogrenci-firsatlar .bio-aurora {
+    height: 300px;
+    display: none;
+  }
+
+  /* Hero — compact on mobile */
+  #biogrenci-firsatlar .bio-hero {
+    padding: 20px 4px 16px;
+  }
+
+  #biogrenci-firsatlar .bio-hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0 0 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  #biogrenci-firsatlar .bio-hero p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #biogrenci-firsatlar .bio-badge-premium {
+    font-size: 9px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    gap: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Controls — not sticky on mobile */
+  #biogrenci-firsatlar .bio-controls-wrapper {
+    position: relative;
+    top: auto;
+    margin-bottom: 16px;
+    padding: 0;
+    width: 100%;
+  }
+
+  #biogrenci-firsatlar .bio-controls {
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    border-radius: 14px;
+    box-shadow: var(--bio-shadow-sm);
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevent filters scrollbar overflow at corners */
+  }
+
+  #biogrenci-firsatlar .bio-search {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #biogrenci-firsatlar .bio-search input {
+    height: 40px;
+    font-size: 13px;
+    padding: 0 12px 0 38px;
+  }
+
+  #biogrenci-firsatlar .bio-search>i {
+    left: 12px;
+    font-size: 13px;
+  }
+
+  #biogrenci-firsatlar .bio-filters {
+    width: 100%;
+    min-width: 0;
+    gap: 6px;
+    padding: 4px 0 6px 0;
+  }
+
+  #biogrenci-firsatlar .bio-chip {
+    padding: 7px 12px;
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  #biogrenci-firsatlar .bio-sort {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #biogrenci-firsatlar .bio-sort select {
+    height: 40px;
+    font-size: 12px;
+    padding: 0 36px 0 40px;
+  }
+
+  /* Grid — single column on mobile */
+  #biogrenci-firsatlar .bio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Card */
+  #biogrenci-firsatlar a.bio-card {
+    border-radius: 14px;
+  }
+
+  #biogrenci-firsatlar .bio-card-img {
+    aspect-ratio: 16 / 9;
+  }
+
+  #biogrenci-firsatlar .bio-card-body {
+    padding: 14px;
+  }
+
+  #biogrenci-firsatlar .bio-card-body h3 {
+    font-size: 15px;
+    margin: 0 0 6px;
+  }
+
+  #biogrenci-firsatlar .bio-card-body p {
+    font-size: 12px;
+    margin: 0 0 12px;
+    -webkit-line-clamp: 2;
+  }
+
+  #biogrenci-firsatlar .bio-brand {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  #biogrenci-firsatlar .bio-cta {
+    padding: 10px 16px;
+    font-size: 13px;
+    border-radius: 10px;
+    gap: 6px;
+  }
+
+  #biogrenci-firsatlar .bio-tag {
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    font-size: 9px;
+    letter-spacing: 0.4px;
+    gap: 4px;
+  }
+
+  #biogrenci-firsatlar .bio-star {
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+  }
+
+  #biogrenci-firsatlar .bio-star i {
+    font-size: 12px;
+  }
+
+  #biogrenci-firsatlar .bio-timer {
+    padding: 10px 12px;
+    font-size: 11px;
+    gap: 5px;
+  }
+
+  /* Skeleton */
+  #biogrenci-firsatlar .bio-skeleton-card {
+    border-radius: 14px;
+  }
+
+  #biogrenci-firsatlar .bio-skel-img {
+    height: 140px;
+  }
+
+  #biogrenci-firsatlar .bio-skel-body {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  #biogrenci-firsatlar .bio-skel-btn {
+    height: 38px;
+  }
+
+  /* Pager */
+  #biogrenci-firsatlar .bio-pager {
+    margin-top: 24px;
+    gap: 8px;
+  }
+
+  #biogrenci-firsatlar .bio-pager-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  #biogrenci-firsatlar .bio-page-bubble {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  /* Empty */
+  #biogrenci-firsatlar .bio-state.bio-empty {
+    padding: 50px 14px;
+  }
+
+  #biogrenci-firsatlar .bio-state.bio-empty i {
+    font-size: 36px;
+    margin-bottom: 14px;
+  }
+
+  #biogrenci-firsatlar .bio-state.bio-empty h3 {
+    font-size: 17px;
+  }
+
+  #biogrenci-firsatlar .bio-state.bio-empty p {
+    font-size: 13px;
+  }
+
+  /* Placeholder */
+  #biogrenci-firsatlar .bio-card-ph i {
+    font-size: 28px;
+  }
+}
+
+/* ---------- Small Mobile (380px) ---------- */
+@media (max-width: 380px) {
+  #biogrenci-firsatlar {
+    padding: 0 8px 40px;
+  }
+
+  #biogrenci-firsatlar .bio-hero h1 {
+    font-size: 22px;
+  }
+
+  #biogrenci-firsatlar .bio-hero p {
+    font-size: 12px;
+  }
+
+  #biogrenci-firsatlar .bio-controls {
+    padding: 8px;
+    gap: 6px;
+    border-radius: 12px;
+  }
+
+  #biogrenci-firsatlar .bio-chip {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  #biogrenci-firsatlar .bio-search input {
+    height: 38px;
+    font-size: 12px;
+  }
+
+  #biogrenci-firsatlar .bio-sort select {
+    height: 38px;
+    font-size: 11px;
+  }
+
+  #biogrenci-firsatlar .bio-grid {
+    gap: 10px;
+  }
+}
+
+/* ---------- Touch Devices ---------- */
+@media (hover: none) {
+  #biogrenci-firsatlar a.bio-card:hover {
+    transform: none;
+    box-shadow: var(--bio-card-shadow);
+  }
+
+  #biogrenci-firsatlar a.bio-card:active {
+    transform: scale(0.97);
+    transition-duration: 0.15s;
+  }
+
+  #biogrenci-firsatlar .bio-chip:hover {
+    background: var(--bio-chip-bg);
+    color: var(--bio-text-mut);
+  }
+
+  #biogrenci-firsatlar .bio-chip.active:hover {
+    background: var(--bio-chip-active-bg);
+    color: var(--bio-chip-active-color);
+  }
+}

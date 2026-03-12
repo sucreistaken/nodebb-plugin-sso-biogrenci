@@ -1,0 +1,129 @@
+/* ================================================
+   bi'öğrenci Premium Fırsatlar - Mobil Uyumluluk Düzenlemesi
+   (NodeBB Custom CSS Kısmına Ekleyebilirsiniz)
+   ================================================ */
+
+/* Tüm öğelerin sınırlarını düzgün hesapla ve tam genişlik ayarı */
+#biogrenci-firsatlar, 
+#biogrenci-firsatlar * {
+  box-sizing: border-box !important;
+}
+
+#biogrenci-firsatlar {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* Yana kaymayı kesin olarak engelle (#biogrenci-firsatlar kapsayıcısı için genel) */
+.bio-premium {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+/* 768px (Mobil Ekranlar) İçin Flex ve Padding Sorunlarını Çözme */
+@media (max-width: 768px) {
+  #biogrenci-firsatlar {
+    padding: 0 15px 40px !important;
+  }
+
+  /* Üst bölümün (Başlık ve Açıklama) ekrandan taşmaması */
+  #biogrenci-firsatlar .bio-hero h1 {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Kontroller (Arama, Filtre, Sıralama) için genişlik ihlali fix'i */
+  #biogrenci-firsatlar .bio-controls-wrapper {
+    width: 100% !important;
+  }
+  
+  #biogrenci-firsatlar .bio-controls {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-x: hidden !important; /* Dışarı taşırmasını engelle */
+  }
+
+  #biogrenci-firsatlar .bio-search,
+  #biogrenci-firsatlar .bio-sort {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  #biogrenci-firsatlar .bio-filters {
+    width: 100% !important;
+    min-width: 0 !important; /* Flex içerisinde genişleyip bozulmasını engeller */
+    padding-bottom: 6px !important;
+    /* mobilde filtrelerin kaydırılabilir olması için */
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* Kartların (Grid alanının) mobil cihaza tam yerleşimi */
+  #biogrenci-firsatlar .bio-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    margin: 0 !important;
+    gap: 16px !important;
+  }
+  
+  #biogrenci-firsatlar a.bio-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 380px) {
+  #biogrenci-firsatlar { padding: 0 10px 40px !important; }
+}
+
+/* ================================================
+   Koyu Tema (Dark Theme) Okunabilirlik Düzeltmesi
+   ================================================ */
+html[data-theme="dark"] #biogrenci-firsatlar .bio-hero h1,
+[data-theme="dark"] #biogrenci-firsatlar .bio-hero h1,
+.theme-dark #biogrenci-firsatlar .bio-hero h1,
+body.dark #biogrenci-firsatlar .bio-hero h1 {
+  /* Arkaplan gradientini kapatıp düz renge ve hafif bir gölgeye çeviriyoruz */
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  color: #ffffff !important;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6), 0 0 24px rgba(59, 130, 246, 0.5) !important;
+}
+
+/* Koyu temadaki kart başlıklarının (h3) ve açıklamalarının da daha parlak olması için opsiyonel ayar */
+/* (Kullanıcı İsteği Üzerine İptal Edildi: Sadece Ana Başlık (Öğrenci Fırsatları) Aydınlatılacak)  */
+
+/* ================================================
+   "bi'öğrenci Premium" rozetindeki "Premium" yazısını gizleme
+   ================================================ */
+#biogrenci-firsatlar .bio-badge-premium {
+  font-size: 0 !important; /* Mevcut metni görünmez yap */
+}
+
+/* Yıldız ikonunun boyutunu geri getir */
+#biogrenci-firsatlar .bio-badge-premium i {
+  font-size: 13px !important; 
+}
+
+/* Yeni metni ("bi'öğrenci") ::after ile ekle */
+#biogrenci-firsatlar .bio-badge-premium::after {
+  content: "bi'öğrenci";
+  font-size: 13px !important;
+  margin-left: 8px; /* Yıldız ikonuyla arasında boşluk bırak */
+}
+
+/* Mobil görünüm için boyutlandırmaları daralt */
+@media (max-width: 768px) {
+  #biogrenci-firsatlar .bio-badge-premium i,
+  #biogrenci-firsatlar .bio-badge-premium::after {
+    font-size: 9px !important;
+  }
+  #biogrenci-firsatlar .bio-badge-premium::after {
+    margin-left: 4px !important;
+  }
+}

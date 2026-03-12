@@ -1,0 +1,18 @@
+{
+  "id": "nodebb-plugin-sso-biogrenci",
+  "url": "",
+  "library": "./library.js",
+  "staticDirs": {
+    "static": "./static"
+  },
+  "modules": {
+    "../client/biogrenci-firsatlar.js": "static/lib/biogrenci-firsatlar.js",
+    "../admin/plugins/biogrenci.js": "static/lib/admin.js"
+  },
+  "hooks": [
+    { "hook": "static:app.load", "method": "init" },
+    { "hook": "filter:admin.header.build", "method": "addAdminNavigation" }
+  ],
+  "templates": "static/templates",
+  "less": ["static/style.less"]
+}

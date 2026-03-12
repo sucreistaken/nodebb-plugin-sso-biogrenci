@@ -1,0 +1,17 @@
+{
+  "name": "nodebb-plugin-sso-biogrenci",
+  "version": "2.0.12",
+  "description": "bi'öğrenci öğrenci fırsatları sayfası for NodeBB",
+  "main": "library.js",
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "biogrenci",
+    "firsatlar",
+    "ogrenci"
+  ],
+  "nbbpm": {
+    "compatibility": "^3.2.0 || ^4.0.0"
+  },
+  "license": "MIT"
+}
